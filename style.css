@@ -1,0 +1,272 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+header{
+    background: url(images/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%, 96%);
+    width: 100%;
+    min-height: 75vh;
+    padding: 2.5rem 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 10%;
+}
+
+.huddle-btn{
+    padding: 10px 2rem;
+    background: #fff;
+    border: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.huddle-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16rem;
+    padding-top: 2rem;
+}
+
+.text-box{
+    position: relative;
+}
+
+.text-box h1{
+    font-size: 35px;
+    line-height: 1.4;
+   font-weight: 600;
+   padding-bottom: 0.7rem;
+}
+
+.text-box p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+}
+
+.huddle-page img{
+    width: 45%;
+}
+
+.new-btn{
+    padding: 1rem 3rem;
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    cursor: pointer;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+    color: #fff;
+}
+
+.new-btn:hover{
+    background-color: hsla(322, 89%, 76%, 0.938);
+    transform: translate(-1%, -1%);
+    transition: 0.5s;
+    
+}
+
+@media(max-width: 768px){
+    .huddle-page{
+        flex-direction: column;
+        gap: 0;
+    }
+    nav img{
+        width: 35%;
+    }
+
+    .text-box{
+        text-align: center;
+    }
+
+    .new-btn{
+        margin-bottom: 1.7rem;
+    }
+
+    .huddle-page img{
+        width: 100%;
+    }
+}
+
+@media(max-width: 375px){
+    header{
+        padding: 1.5rem 2rem;
+    }
+    .text-box h1{
+        font-size: 15px;
+    }
+}
+
+/**section**/
+
+section{
+    width: 100%;
+    padding: 2.5rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18rem;
+    background: #fff;
+    font-family: 'Open sans', sans-serif;
+    padding: 4rem 3rem;
+    border-radius: 12px;
+    box-shadow:  0 0 15px 5px rgba(0, 0, 0, 0.2);
+    padding-left: 6rem;
+}
+
+.card img{
+    width: 32%;
+}
+
+.card-text p{
+    text-align: start;
+    color: #555;
+    opacity: 1;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+.card-1{
+    background: #fff;
+    text-align: center;
+    position: relative;
+    width: 60%;
+    top: 40%;
+    left: 20%;
+    font-family: 'Open sans', sans-serif;
+    padding: 6rem 3rem;
+    border-radius: 12px;
+    box-shadow:  0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-1 h2{
+    padding: 1;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 768px){
+    section{
+        padding: 2.5rem 2rem;
+    }
+    .card{
+        flex-direction: column-reverse;
+        padding: 2rem 3rem;
+        gap: 0;
+        text-align: center;
+    }
+
+    .card:nth-of-type(2){
+        flex-direction: column;
+    }
+
+    .card-text p{
+       text-align: center;
+    }
+
+    .card img{
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+
+    .card-1{
+        width: 100%;
+        left: 0;
+        padding: 4rem 1rem;
+    }
+
+    .card-1 h2{
+        padding: 0;
+        font-size: 20px;
+    }
+}
+
+footer{
+    padding: 6rem 4rem;
+    background: hsl(192, 100%, 9%);
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: '0pen sans', sans-serif;
+}
+footer ul li{
+    list-style-type: none;
+    line-height: 2;
+    font-weight: 500;
+}
+
+.foot-1 img{
+    margin-right: 10px;
+    position: relative;
+}
+
+.foot-1 p{
+    font-size: 14px;
+}
+
+.footer-image img{
+    margin-bottom: 2.5rem;
+    fill: #fff;
+}
+
+.svg-1{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 0.7rem;
+}
+
+.svg-1 p{
+    line-break: ;
+}
+
+.svg-2{
+    display: flex;
+    padding-bottom: 0.7rem;
+}
+
+.svg-3{
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: flex-start;
+    }
+
+    .foot-1{
+        padding-bottom: 1rem;
+    }
+
+    .foot-2{
+        padding-bottom: 1rem;
+    }
+}
